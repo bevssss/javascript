@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+   <title>Javascript</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Javascript</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="1.html">TempConvert <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="2.html">Larger</a>
+          <a class="nav-item nav-link" href="3.html">Sort</a>
+          <a class="nav-item nav-link" href="4.html">Largest</a>
+          <a class="nav-item nav-link" href="5.html">OddEven</a>
+          <a class="nav-item nav-link" href="6.html">MonthConvert</a>
+          <a class="nav-item nav-link" href="7.html">Check</a>
+          </div>
+        </div>
+      </nav>
+
+    <form>
+        Enter Number: <input type="text" name="number"><br>
+        Is the number even or odd? <input type="text" name="evenodd"><br>
+        <input type="button" onclick ="evenorodd(this.form)" value="Submit">
+    </form>
+
+    <script>
+        function evenorodd(form){
+               var a = parseInt(form.number.value);
+ 
+              if (a%2 === 0)
+                {
+                    form.evenodd.value  = 'even';
+                }
+              else 
+                form.evenodd.value  = 'odd';
+        }
+</script>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</body>
+</html>
